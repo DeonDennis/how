@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to create Circles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #dot{
+        width:25px;
+        height:25px;
+        background:blue;
+        border-radius:50%;
+        display:inline-block;
+      }
+      #Cont-A{
+        text-align:center;
+        margin-bottom: 40px;
+      }
+      #copy1Btn,#copy2Btn{
+        position:absolute;
+        left:280px;
+      }
+      #copy1Btn{
+        top:590px;
+      }
+      #copy2Btn{
+        top:966px;
+      }
+      h3{
+        margin:10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="ContMain">
+        <div id="menuCont">
+          <div id="Menu">
+            <h1 style="font-size:xxx-large;color:black;" onclick="removeMenu()">&times;</h1>
+            <a href="How to.html" id="ownerLink"><i class="fa fa-home"></i>Home</a>
+            <input type="text" id="searchBar" onkeyup="Filter()" placeholder="How To..."/>
+            <a href="HTSkillBar.html">Skill Bar</a>
+            <a href="HTFlipCard.html">Flip Card</a>
+            <a href="HTJSAnimations.html">JS Animation</a>
+            <a href="HTCalender.html">Calender</a>
+            <a href="HTSortList.html">Sort List</a>
+            <a href="HTSortTable.html">Sort Table</a>
+            <a href="HTDropdown.html">Dropdown</a>
+            <a href="HTFilterTable.html">Filter Table</a>
+            <a href="HTFilterList.html">Filter List</a>
+            <a href="HTButton.html">Buttons</a>
+            <a href="HTModalBox.html">Modal Box</a>
+            <a href="HTStarRating.html">Star Rating</a>
+            <a href="HTComingSoonPage.html">Coming Soon page</a>
+            <a href="HTAccordion.html">Accordion</a>
+            <a href="HTCards.html">Cards</a>
+            <a href="HTTooltips.html">Tooltips</a>
+            <a href="HTPopups.html">Popups</a>
+            <a href="HTCircles.html">Circles</a>
+            <a href="HTGlowingText.html">Glowing Text</a>
+            <a href="HTProfileCard.html">Profile Card</a>
+            <a href="HTProductCard.html">Product Card</a>
+            <a href="HTPlaceholderColor.html">Placeholder Color</a>
+            <a href="HTToDoList.html">To Do List</a>
+            <a href="HTStickyHeader.html">Sticky Header</a>
+            <a href="HTHideScrollbar.html">Hide Scrollbar</a>
+            <a href="HTDownloadLink.html">Download Link</a>
+            <a href="HTCallout.html">Callout</a>
+            <a href="HTGetCurrentScreenSize.html">Get current screen size </a>
+            <a href="HTGetCurrentURL.html">Get current URL</a>
+            <a href="HTGetIframeElement.html">Get Iframe Element</a>
+            <a href="HTCalculator.html">Calculator</a>
+          </div>
+        </div>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        <div id="circle" onclick="displayMenu()">menu</div>
+        <div>
+          <a href="HTCards.html" id="btnA"><button id="prevbtn">Prev</button></a>
+          <a href="HTComingSoonPage.html" id="btnA"><button id="nextbtn">Next</button></a>
+        </div>
+        
+        <div id="explainCont">
+        <h1>How To Create Circles</h1>
+        <hr><br><br><hr>
+        How to create dots 
+        </div>
+        
+        <h3>OUTPUT:</h3>
+        <div id="Cont-A">
+          <span id="dot"></span>
+          <span id="dot"></span>
+          <span id="dot"></span>
+        </div>
+        
+        <h3>HTML code</h3>
+        <div id="Cont-Z1">
+          &lt;span id="dot">&lt;/span><br>
+          &lt;span id="dot">&lt;/span><br>
+          &lt;span id="dot">&lt;/span><br>
+        </div>
+        <button onclick="copy1()" id="copy1Btn">Copy</button>
+        
+        <h3>CSS code</h3>
+        <div id="Cont-Z2">
+      #dot{<br>
+        &nbsp; &nbsp; width:25px;<br>
+        &nbsp; &nbsp; height:25px;<br>
+        &nbsp; &nbsp; background:blue;<br>
+        &nbsp; &nbsp; border-radius:50%;<br>
+        &nbsp; &nbsp; display:inline-block;<br>
+      }
+        </div>
+        <button onclick="copy2()" id="copy2Btn">Copy</button>
+        
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis <i class="fa fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="HowTo.js">
+    </script>
+    <script>
+      function copy1(){
+        let x =document.getElementById("Cont-Z1");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy1Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      function copy2(){
+        let x =document.getElementById("Cont-Z2");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy2Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      function copy3(){
+        let x =document.getElementById("Cont-Z3");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy3Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How To Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #HowToCont{
+        text-align:left;
+        margin:20px;
+        margin-top:80px;
+        font-size:large;
+        line-height: 40px;
+      }
+      #HowToCont a i{
+        float:right;
+        color:rgba(0,0,0,0.5);
+        padding-top:10px;
+        padding-right:10px;
+      }
+      #HowToCont a:hover,
+      a:active i{
+        color:black;
+      }
+      #ZZ{
+        background:rgba(0,0,0,0.2);
+      }
+      #ZZ:active,
+      #ZZ:hover{
+        background:#0096ff;
+      }
+      #welcomeText{
+        margin:5px;
+        padding:20px;
+        background:#343434;
+        border-radius:5px;
+        color:white;
+      }
+      #HowToDivCont{
+        box-shadow:0.5px 0.5px 10px 3px #5d5d5d;
+        background:skyblue;
+        margin:20px;
+        margin-top:40px;
+        margin-bottom:60px;
+      }
+      #btnPart{
+        padding:20px;
+        background:rgba(0,0,0,0.3);
+      }
+      #doCont{
+        padding:10px;
+      }
+      #btnPart button{
+        padding:10px;
+        background:blue;
+        color:white;
+        border-radius:10px;
+        border:none;
+      }
+      #btnPart a{
+        display:inline-block;
+      }
+      #btnPart a:hover,
+      a:active{
+        background:none;
+      }
+      #howtodropdown a{
+        color:white;
+      }
+      #hding{
+        text-align:center;
+      }
+      .tooltips{
+        text-align:center;
+        text-decoration: underline dotted;
+        font-size:large;
+      }
+      .tooltips span{
+        visibility:hidden;
+        background:rgba(20,20,20,0.7);
+        color:white;
+        text-align:center;
+        border-radius:20px;
+        padding:5px;
+        font-size:small;
+        position:absolute;
+        z-index:1;
+      }
+      .TTop{
+        top:665px;
+        left:145px;
+      }
+      .TLeft{
+        left:85px;
+      }
+      .TBottom{
+        top:775px;
+        left:135px;
+      }
+      #toolTop:hover .TTop{
+        visibility:visible;
+        opacity:1;
+      }
+      #toolRight:hover .TRight{
+        visibility:visible;
+        opacity:1;
+      }
+      #toolLeft:hover .TLeft{
+        visibility:visible;
+        opacity:1;
+      }
+      #toolBottom:hover .TBottom{
+        visibility:visible;
+        opacity:1;
+      }
+      #modalBtn{
+        padding:5px;
+        font-size:large;
+      }
+      #modal{
+        width:100%;
+        height:700px;
+        background:rgba(0,0,0,0.3);
+        position:fixed;
+        top:0px;
+        left:0px;
+        display:none;
+      }
+      #modalCont{
+        background:darkblue;
+        color:white;
+        padding:10px;
+        border-radius:10px;
+        margin:20px;
+        position:absolute;
+      }
+      #modalX{
+        font-size:xx-large;
+        margin:0px;
+        padding-left:270px;
+        background:rgba(0,0,0,0.05);
+      }
+      .glow{
+        font-size:xxx-large;
+        color:white;
+        font-family:cursive;
+        padding:20px;
+        text-align:center;
+        animation:glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow{
+        from{
+          text-shadow:0 0 10px #fff, 0 0 20px #fff, 0 0 30px yellow, 0 0 40px yellow;
+        }
+        to{
+          text-shadow:0 0 20px #fff, 0 0 30px #fff, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 
+        }
+      }
+      #holderColor{
+        padding:10px;
+        margin:30px auto;
+      }
+      #prevbtn{visibility:hidden;}
+      
+    </style>
+  </head>
+  <body>
+    <div id="ContMain">
+    <div id="menuCont">
+          <div id="Menu">
+            <h1 style="font-size:xxx-large;color:black;" onclick="removeMenu()">&times;</h1>
+            <a href="How to.html" id="ownerLink"><i class="fa fa-home"></i>Home</a>
+            <input type="text" id="searchBar" onkeyup="Filter()" placeholder="How To..."/>
+            <a href="HTSkillBar.html">Skill Bar</a>
+            <a href="HTFlipCard.html">Flip Card</a>
+            <a href="HTJSAnimations.html">JS Animation</a>
+            <a href="HTCalender.html">Calender</a>
+            <a href="HTSortList.html">Sort List</a>
+            <a href="HTSortTable.html">Sort Table</a>
+            <a href="HTDropdown.html">Dropdown</a>
+            <a href="HTFilterTable.html">Filter Table</a>
+            <a href="HTFilterList.html">Filter List</a>
+            <a href="HTButton.html">Buttons</a>
+            <a href="HTModalBox.html">Modal Box</a>
+            <a href="HTStarRating.html">Star Rating</a>
+            <a href="HTComingSoonPage.html">Coming Soon page</a>
+            <a href="HTAccordion.html">Accordion</a>
+            <a href="HTCards.html">Cards</a>
+            <a href="HTTooltips.html">Tooltips</a>
+            <a href="HTPopups.html">Popups</a>
+            <a href="HTCircles.html">Circles</a>
+            <a href="HTGlowingText.html">Glowing Text</a>
+            <a href="HTProfileCard.html">Profile Card</a>
+            <a href="HTProductCard.html">Product Card</a>
+            <a href="HTPlaceholderColor.html">Placeholder Color</a>
+            <a href="HTToDoList.html">To Do List</a>
+            <a href="HTStickyHeader.html">Sticky Header</a>
+            <a href="HTHideScrollbar.html">Hide Scrollbar</a>
+            <a href="HTDownloadLink.html">Download Link</a>
+            <a href="HTCallout.html">Callout</a>
+            <a href="HTGetCurrentScreenSize.html">Get current screen size </a>
+            <a href="HTGetCurrentURL.html">Get current URL</a>
+            <a href="HTGetIframeElement.html">Get Iframe Element</a>
+            <a href="HTCalculator.html">Calculator</a>
+          </div>
+        </div>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        
+        <div id="circle" onclick="displayMenu()">menu</div>
+          <a href="HTTooltips.html" id="btnA"><button id="prevbtn" disabled>Prev</button></a>
+          <a href="HTAccordion.html" id="btnA"><button id="nextbtn">Next</button></a>
+      <div id="welcomeText">
+        <h2>Welcome!</h2>
+        <p>The HOW TO website Contains a lot of tutorials teaching you how to do a lot of stuffs using HTML, CSS and JavaScript.<br> Below are some new things you would like to learn how to do.<br> You can check the Menu for more. </p>
+      </div>
+      <div id="HowToDivCont">
+        <h2 id="hding">Button</h2><hr>
+        <div id="doCont">
+          <button style="background:none;border:2px solid green; padding:10px; color:green;border-radius:10px;">no background</button>
+          <button style="background:green; padding:10px; color:white;border:none; border-radius:10px;">Background</button><br>
+          <button style="background:yellow;padding:10px; color:black;border-radius:10px;box-shadow:3px 3px 3px black">shadow</button>
+        </div>
+        <div id="btnPart">
+          <a href="HTButton.html"><button><b>HOW TO </b>&nbsp; <i class="fa fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+      
+      <div id="HowToDivCont">
+        <h2 id="hding">Tooltips</h2><hr>
+        <div id="doCont" class="tooltips">
+          <div id="toolTop">Top
+          <span id="TText" class="TTop">Tooltip Top</span></div>
+          <div id="toolRight">Right
+          <span id="TText" class="TRight">Tooltip Right</span></div>
+          <div id="toolLeft">Left
+          <span id="TText" class="TLeft">Tooltip Left</span></div>
+          <div id="toolBottom">Bottom
+          <span id="TText" class="TBottom">Tooltip Bottom</span></div>
+        </div>
+        <div id="btnPart">
+          <a href="HTTooltips.html"><button><b>HOW TO </b>&nbsp; <i class="fa fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+      
+      <div id="HowToDivCont">
+        <h2 id="hding">Dropdown</h2><hr>
+        <div id="doCont">
+          <button onclick="howtodropdown()" style="padding:3px;font-size:20px;">Drop</button><br>
+          <div id="howtodropdown" style="width:100px; padding:10px;display:inline-block;background:#292929;line-height:30px;display:none;">
+            <a>Home</a>
+            <a>about</a>
+            <a>setting</a>
+            <a>cookie</a>
+          </div>
+        </div>
+        <div id="btnPart">
+          <a href="HTDropdown.html"><button><b>HOW TO </b>&nbsp; <i class="fa fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+      
+      <div id="HowToDivCont">
+        <h2 id="hding">Modal Box</h2><hr>
+        <div id="doCont">
+          <button id="modalBtn">BOX</button>
+          <div id="modal">
+          <div id="modalCont">
+            <p id="modalX">&times;</p>
+            <p>The HOW TO website Contains a lot of tutorials teaching you how to do a lot of stuffs using HTML, CSS and JavaScript.<br> Below are some new things you would like to learn how to do.<br> You can check the Menu for more. </p>
+          </div>
+          </div>
+        </div>
+        <div id="btnPart">
+          <a href="HTModalBox.html"><button><b>HOW TO </b>&nbsp; <i class="fa fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+      
+      <div id="HowToDivCont">
+        <h2 id="hding">Glowing Text</h2><hr>
+        <div id="doCont">
+          <p class="glow">Glowing Text</p>
+        </div>
+        <div id="btnPart">
+          <a href="HTGlowingText.html"><button><b>HOW TO </b>&nbsp; <i class="fa fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+      
+      <div id="HowToDivCont">
+        <h2 id="hding">Placeholder Color</h2><hr>
+        <div id="doCont">
+          <input type="text" placeholder="This is a blue placeholder" id="holderColor"/>
+        </div>
+        <div id="btnPart">
+          <a href="HTPlaceholderColor.html"><button><b>HOW TO </b>&nbsp; <i class="fa fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+      
+      <div id="HowToCont">
+        <h1>How To</h1>
+        <a href="HTFlipCard.html" id="ZZ">Flip Card 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTJSAnimations.html" id="AA">JS Animation 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTCalender.html" id="ZZ">Calender 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTStarRating.html" id="AA">Star Rating 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTComingSoonPage.html" id="ZZ">Coming Soon page 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTAccordion.html" id="AA">Accordion
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTProfileCard.html" id="ZZ">Profile Card 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTProductCard.html" id="AA">Product Card 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTToDoList.html" id="ZZ">To Do List 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTStickyHeader.html" id="AA">Sticky Header 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTHideScrollbar.html" id="ZZ">Hide Scrollbar
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTDownloadLink.html" id="AA">Download Link
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTCallout.html" id="ZZ">Callout 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTGetCurrentScreenSize.html" id="AA">Get current screen size 
+        <i class="fa fa-arrow-right"></i></a>
+        <a href="HTGetCurrentURL.html" id="ZZ">Get current URL 
+        <i class="fa fa-arrow-right"></i></a>
+      </div>
+      
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis &copy; Copyright</p>
+    </footer>
+    
+    <script src="HowTo.js">
+    </script>
+    
+    <script>
+      function howtodropdown(){
+        let x =document.getElementById("howtodropdown");
+        if(x.style.display == "none"){
+          x.style.display="block";
+        }else{
+          x.style.display="none";
+        }
+      }
+      
+      modalBtn.onclick=function(){
+        let x =document.getElementById("modal");
+        x.style.display="block";
+      }
+      modalX.onclick=function(){
+        document.getElementById("modal").style.display="none";
+      }
+      modal.onclick=function(){
+        document.getElementById("modal").style.display="none";
+      }
+    </script>
+  </body>
+</html>

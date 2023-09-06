@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to Sort Table</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #myTable{
+        border-collapse:collapse;
+      }
+      #myTable td{
+        padding:10px;
+        border:1px solid gray;
+      }
+      #tableHead th{
+        padding:10px;
+        border:grey 1px solid;
+        background:rgba(50,50,50,0.5);
+      }
+      #Cont-A{margin-bottom:40px;}
+      h3{margin:10px;}
+      #copy1Btn,#copy2Btn,
+      #copy3Btn{
+        position:absolute;
+        left:285px;
+      }
+      #copy1Btn{
+        top:1718px;
+      }
+      #copy2Btn{
+        top:2295px;
+      }
+      #copy3Btn{
+        top:3634px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ContMain">
+        <div id="menuCont">
+          <div id="Menu">
+            <h1 style="font-size:xxx-large;color:black;" onclick="removeMenu()">&times;</h1>
+            <a href="How to.html" id="ownerLink"><i class="fa fa-home"></i>Home</a>
+            <input type="text" id="searchBar" onkeyup="Filter()" placeholder="How To..."/>
+            <a href="HTSkillBar.html">Skill Bar</a>
+            <a href="HTFlipCard.html">Flip Card</a>
+            <a href="HTJSAnimations.html">JS Animation</a>
+            <a href="HTCalender.html">Calender</a>
+            <a href="HTSortList.html">Sort List</a>
+            <a href="HTSortTable.html">Sort Table</a>
+            <a href="HTDropdown.html">Dropdown</a>
+            <a href="HTFilterTable.html">Filter Table</a>
+            <a href="HTFilterList.html">Filter List</a>
+            <a href="HTButton.html">Buttons</a>
+            <a href="HTModalBox.html">Modal Box</a>
+            <a href="HTStarRating.html">Star Rating</a>
+            <a href="HTComingSoonPage.html">Coming Soon page</a>
+            <a href="HTAccordion.html">Accordion</a>
+            <a href="HTCards.html">Cards</a>
+            <a href="HTTooltips.html">Tooltips</a>
+            <a href="HTPopups.html">Popups</a>
+            <a href="HTCircles.html">Circles</a>
+            <a href="HTGlowingText.html">Glowing Text</a>
+            <a href="HTProfileCard.html">Profile Card</a>
+            <a href="HTProductCard.html">Product Card</a>
+            <a href="HTPlaceholderColor.html">Placeholder Color</a>
+            <a href="HTToDoList.html">To Do List</a>
+            <a href="HTStickyHeader.html">Sticky Header</a>
+            <a href="HTHideScrollbar.html">Hide Scrollbar</a>
+            <a href="HTDownloadLink.html">Download Link</a>
+            <a href="HTCallout.html">Callout</a>
+            <a href="HTGetCurrentScreenSize.html">Get current screen size </a>
+            <a href="HTGetCurrentURL.html">Get current URL</a>
+            <a href="HTGetIframeElement.html">Get Iframe Element</a>
+            <a href="HTCalculator.html">Calculator</a>
+          </div>
+        </div>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        <div id="circle" onclick="displayMenu()">menu</div>
+        <div>
+          <a href="HTSortList.html" id="btnA"><button id="prevbtn">Prev</button></a>
+          <a href="HTStarRating.html" id="btnA"><button id="nextbtn">Next</button></a>
+        </div>
+        
+        <div id="explainCont">
+        <h1>How To Create Sort Table</h1>
+        <hr><br><br><hr>
+        Click on the Button to Sort the Table Alphabetically.
+        </div>
+        
+        <h3>OUTPUT:</h3>
+        <div id="Cont-A">
+          <button id="sortBtn">Sort Table</button>
+          <table id="myTable">
+            <tr id="tableHead">
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>60%</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>95%</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>80%</td>
+            </tr>
+            <tr>
+              <td>PHP</td>
+              <td>50%</td>
+            </tr>
+          </table>
+        </div>
+        
+        <h3 id="CodeName">HTML code</h3>
+        <div id="Cont-Z1">
+          &lt;button id="sortBtn">Sort Table &lt;/button><br>
+          &lt;table id="myTable"><br>
+              &nbsp; &nbsp; &lt;tr id="tableHead"><br>
+              &nbsp; &nbsp; &nbsp; &nbsp; &lt;th>Language&lt;/th><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;th>Level&lt;/th><br>
+              &nbsp; &nbsp; &lt;/tr><br>
+              &nbsp; &nbsp; &lt;tr><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;td>JavaScript&lt;/td><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;td>60%&lt;/td><br>
+              &nbsp; &nbsp; &lt;/tr><br>
+              &nbsp; &nbsp; &lt;tr><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;td>HTML&lt;/td><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;td>95%&lt;/td><br>
+              &nbsp; &nbsp; &lt;/tr><br>
+              &nbsp; &nbsp; &lt;tr><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;Continue...<br>
+              &nbsp; &nbsp; &lt;/tr><br>
+              &nbsp; &nbsp; &lt;tr><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;td>CSS&lt;/td><br>
+              &nbsp; &nbsp; &nbsp; &nbsp;&lt;td>80%&lt;/td><br>
+              &nbsp; &nbsp; &lt;/tr><br>
+              &nbsp; &nbsp; Continue...<br>
+          &lt;/table>
+        </div>
+        <button onclick="copy1()" id="copy1Btn">Copy</button>
+        
+        <h3 id="CodeName">CSS code</h3>
+        <div id="Cont-Z2">
+      #myTable{<br>
+        &nbsp; &nbsp; border-collapse:collapse;<br>
+      }<br>
+      #myTable td{<br>
+        &nbsp; &nbsp; padding:10px;<br>
+        &nbsp; &nbsp; border:1px solid gray;<br>
+      }<br>
+      #tableHead th{<br>
+        &nbsp; &nbsp; padding:10px;<br>
+        &nbsp; &nbsp; border:grey 1px solid;<br>
+        &nbsp; &nbsp; background:rgba(50,50,50,0.5);<br>
+      }
+        </div>
+        <button onclick="copy2()" id="copy2Btn">Copy</button>
+        
+        <h3 id="CodeName">JavaScript code</h3>
+        <div id="Cont-Z3">
+      document.getElementById<wbr>("sortBtn")<wbr>.addEventListener<wbr>("click",sort);<br>
+function sort() {<br>
+  &nbsp; &nbsp; let table = document<wbr>.getElementById<wbr>("myTable");<br>
+  &nbsp; &nbsp; let switching = true;<br>
+  &nbsp; &nbsp; let shouldSwitch;<br>
+  &nbsp; &nbsp; while (switching) {<br>
+  &nbsp; &nbsp; &nbsp; switching = false;<br>
+  &nbsp; &nbsp; &nbsp; rows = table.rows;<br>
+  &nbsp; &nbsp; &nbsp; let i;<br>
+  &nbsp; &nbsp; &nbsp; for (i = 1; i &lt; (rows.length - 1); i++) {<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; shouldSwitch = false;<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; let x = rows[i]<wbr>.getElementsByTagName<wbr>("TD")[0];<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; let y = rows[i + 1]<wbr>.getElementsByTagName<wbr>("TD")[0];<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; if (x.innerHTML<wbr>.toLowerCase() > y.innerHTML<wbr>.toLowerCase()) {<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; shouldSwitch = true;<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break;<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+  &nbsp; &nbsp; &nbsp; }<br>
+  &nbsp; &nbsp; &nbsp; if (shouldSwitch) {<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; let rows[i]<wbr>.parentNode<wbr>.insertBefore<wbr>(rows[i + 1], rows[i]);<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; switching = true;<br>
+  &nbsp; &nbsp; &nbsp; }<br>
+  &nbsp; &nbsp; }<br>
+}
+        </div>
+        <button onclick="copy3()" id="copy3Btn">Copy</button>
+        
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis <i class="fa fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="HowTo.js">
+    </script>
+    <script>
+      function copy1(){
+        let x =document.getElementById("Cont-Z1");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy1Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      function copy2(){
+        let x =document.getElementById("Cont-Z2");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy2Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      function copy3(){
+        let x =document.getElementById("Cont-Z3");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy3Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      document.getElementById("sortBtn").addEventListener("click",sort);
+function sort() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+    </script>
+  </body>
+</html>

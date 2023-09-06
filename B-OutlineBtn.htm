@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #container{background:#ddf;}
+      #head{padding:10px;}
+      h3{margin:10px;}
+      .fa-bars{float:left;}
+      #BtnDropsCont{
+        position:fixed;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        display:none;
+        width:100%;
+        height:700px;
+        z-index:1;
+      }
+      #BtnDrops{
+        position:absolute;
+        width:60%;
+        background:#ddf;
+        left:;
+        padding:10px;
+        line-height:40px;
+      }
+      #Cont-A{margin-bottom:40px;}
+      h1{text-align:center;}
+      #Cont-Z1{height:30em;}
+      
+      #Btn-01,#Btn-02,#Btn-03,
+      #Btn-04,#Btn-05{
+        width:100px;
+        font-size:large;
+        padding:10px;
+        margin:10px auto;
+        background:none;
+      }
+      #Btn-01{
+        border:solid 3px red;
+        color:white;
+      }
+      #Btn-02{
+        border:3px solid orange;
+        color:white;
+      }
+      #Btn-04{
+        border:solid 3px green;
+        color:white;
+        border-radius:10px;
+      }
+      #Btn-05{
+        border:solid 3px blue;
+        color:white;
+        border-radius:10px;
+      }
+      
+      #copy1Btn{
+        position:absolute;
+        left:280px;
+        top:1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        
+        <div id="explainCont">
+        <h1> <i onclick="dropMenu()" class="fa fa-bars"></i>Outline Buttons</h1><hr>
+        <div id="BtnDropsCont">
+        <div id="BtnDrops">
+          <a href="HTButton.html">Back to Buttons</a>
+          <h2>Buttons</h2>
+          <a href="B-AlartBtn.htm">Alart Buttons</a>
+          <a id="ownerLink" href="B-OutlineBtn.htm">Outline Buttons</a>
+          <a href="B-LoadingBtn.htm">Loading Buttons</a>
+          <a href="B-SplitBtn.htm">Split Buttons</a>
+          <a href="B-FadeBtn.htm">Fade Buttons</a>
+          <a href="B-Social-MBtn.htm">Social Media Buttons</a>
+          <a href="B-DownloadBtn.htm">Download Buttons</a>
+          <a href="B-IconBtn.htm">Icon Buttons</a>
+          <a href="B-PillBtn.htm">Pill Buttons</a>
+          <a href="B-NotificationBtn.htm">Notification Buttons</a>
+          <a href="B-NPBtn.htm">Next-Prev Buttons</a>
+          <a href="B-BlockBtn.htm">Block Buttons</a>
+          <a href="B-Scroll-toTopBtn.htm">Scroll To Top Buttons</a>
+          <a href="B-RoundBtn.htm">Round Buttons</a>
+        </div>
+        </div>
+        </div>
+        
+        <h3>OUTPUT:</h3>
+        <div id="Cont-A">
+          <button id="Btn-01">Danger </button>
+          <button id="Btn-02">Warning</button>
+          <button id="Btn-03">Default </button>
+          <button id="Btn-04">Success</button>
+          <button id="Btn-05">Info</button>
+        </div>
+        
+        <h3>Code:</h3>
+        <div id="Cont-Z1">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &nbsp; &nbsp; &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;meta charset="utf-8"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;meta name="viewport" content="device-width, initial-scale=1"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;style&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Btn-01,#Btn-02,#Btn-03,<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Btn-04,#Btn-05{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width:100px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size:large;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding:10px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin:10px auto;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background:none;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Btn-01{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border:solid 3px red;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:white;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Btn-02{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border:3px solid orange;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:white;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Btn-04{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border:solid 3px green;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:white;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius:10px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Btn-05{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border:solid 3px blue;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:white;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius:10px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/style&gt;<br>
+          &nbsp; &nbsp; &lt;/head&gt;<br>
+          &nbsp; &nbsp; &lt;body&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="Btn-01"&gt; Danger &lt;/button&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="Btn-02"&gt; Warning &lt;/button&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="Btn-03"&gt; Default &lt;/button&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="Btn-04"&gt; Success &lt;/button&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="Btn-05"&gt; Info &lt;/button&gt;<br>
+          &nbsp; &nbsp; &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div>
+        <button onclick="copy1()" id="copy1Btn">Copy</button>
+        
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis <i class="fa fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="HowTo.js">
+    </script>
+    <script>
+      function copy1(){
+        let x =document.getElementById("Cont-Z1");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy1Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      function dropMenu(){
+        let gg =document.getElementById("BtnDropsCont");
+        gg.style.display="block";
+      }
+      window.onclick=function(event){
+        if(event.target==document.getElementById("BtnDropsCont") ){
+          document.getElementById("BtnDropsCont").style.display="none";
+        }
+      }
+    </script>
+  </body>
+</html>

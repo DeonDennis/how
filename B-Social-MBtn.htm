@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #container{background:#ddf;}
+      #head{padding:10px;}
+      h3{margin:10px;}
+      .fa-bars{float:left;}
+      #BtnDropsCont{
+        position:fixed;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        display:none;
+        width:100%;
+        height:700px;
+        z-index:1;
+      }
+      #BtnDrops{
+        position:absolute;
+        width:60%;
+        background:#ddf;
+        left:;
+        padding:10px;
+        line-height:40px;
+      }
+      h1{text-align:center;}
+      #Cont-A{margin-bottom:40px;}
+      #Cont-Z1{height:30em;}
+      #copy1Btn{
+        position:absolute;
+        left:280px;
+        top:1280px;
+      }
+      
+      .SocialMedia a{
+        width:60px;
+        height:60px;
+        padding:15px;
+        margin:20px;
+        font-size:30px;
+        text-align:center;
+        color:white;
+      }
+      .SocialMedia a:active,
+      a:hover,
+      a:focus{
+        background:none;
+        opacity:0.5;
+      }
+      #R{
+        border-radius:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        
+        <div id="explainCont">
+        <h1> <i onclick="dropMenu()" class="fa fa-bars"></i><span >Social Media Buttons</span></h1><hr>
+        <div id="BtnDropsCont">
+        <div id="BtnDrops">
+          <a href="HTButton.html">Back to Buttons</a>
+          <h2>Buttons</h2>
+          <a href="B-AlartBtn.htm">Alart Buttons</a>
+          <a href="B-OutlineBtn.htm">Outline Buttons</a>
+          <a href="B-LoadingBtn.htm">Loading Buttons</a>
+          <a href="B-SplitBtn.htm">Split Buttons</a>
+          <a href="B-FadeBtn.htm">Fade Buttons</a>
+          <a id="ownerLink" href="B-Social-MBtn.htm">Social Media Buttons</a>
+          <a href="B-DownloadBtn.htm">Download Buttons</a>
+          <a href="B-IconBtn.htm">Icon Buttons</a>
+          <a href="B-PillBtn.htm">Pill Buttons</a>
+          <a href="B-NotificationBtn.htm">Notification Buttons</a>
+          <a href="B-NPBtn.htm">Next-Prev Buttons</a>
+          <a href="B-BlockBtn.htm">Block Buttons</a>
+          <a href="B-Scroll-toTopBtn.htm">Scroll To Top Buttons</a>
+          <a href="B-RoundBtn.htm">Round Buttons</a>
+        </div>
+        </div>
+        </div>
+        
+        <h3>OUTPUT:</h3>
+        <div id="Cont-A" class="SocialMedia">
+          <a class="fa fa-facebook" style="background:#3b5998;"></a>
+          <a class="fa fa-instagram" style="background:#125688;"></a>
+          <a class="fa fa-twitter" style="background:#55acee;"></a>
+          <a class="fa fa-youtube" style="background:#b00;"></a>
+          <a class="fa fa-google" style="background:#dd4b39;"></a>
+          <a class="fa fa-skype" style="background:#00aff0;"></a>
+          <a class="fa fa-telegram" id="R" style="background:white ;color:#55acee;font-size:45px;padding:7px"></a>
+          <a class="fa fa-linkedin" id="R" style="background:#007bb5;"></a>
+          <a class="fa fa-snapchat-ghost" id="R" style="background:#fffc00;text-shadow:-1px 0 black, 1px 0 black, 1px 0 black, -1px 0 black;"></a>
+          <a class="fa fa-yahoo" id="R" style="background:#430297;"></a>
+        </div>
+        
+        <h3>Code:</h3>
+        <div id="Cont-Z1">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &nbsp; &nbsp; &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;meta charset="utf-8"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;meta name="viewport" content="device-width, initial-scale=1"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;link rel="stylesheet" href="https://cdnjs.<wbr>cloudflare.com/<wbr>ajax/libs/font-<wbr>awesome/4.7.0/css/<wbr>font-awesome.<wbr>min.css"/&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;style&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .SocialMedia a{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width:60px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height:60px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding:15px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin:20px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size:30px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align:center;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:white;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .SocialMedia a:active,<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a:hover,<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a:focus{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background:none;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; opacity:0.5;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #R{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius:20px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/style&gt;<br>
+          &nbsp; &nbsp; &lt;/head&gt;<br>
+          &nbsp; &nbsp; &lt;body&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="SocialMedia"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-facebook" style="background:#3b5998;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-instagram" style="background:#125688;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-twitter" style="background:#55acee;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-youtube" style="background:#b00;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-google" style="background:#dd4b39;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-skype" style="background:#00aff0;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-telegram" id="R" style="background:white ;color:#55acee;font-size:45px;padding:7px"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-linkedin" id="R" style="background:#007bb5;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-snapchat-ghost" id="R" style=" background:#fffc00; text-shadow:-1px 0 black, 1px 0 black, 1px 0 black, -1px 0 black;" &gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="fa fa-yahoo" id="R" style="background:#430297;"&gt;&lt;/a&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br>
+          &nbsp; &nbsp; &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div>
+        <button onclick="copy1()" id="copy1Btn">Copy</button>
+        
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis <i class="fa fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="HowTo.js">
+    </script>
+    <script>
+      function copy1(){
+        let x =document.getElementById("Cont-Z1");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy1Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      function dropMenu(){
+        let gg =document.getElementById("BtnDropsCont");
+        gg.style.display="block";
+      }
+      window.onclick=function(event){
+        if(event.target==document.getElementById("BtnDropsCont") ){
+          document.getElementById("BtnDropsCont").style.display="none";
+        }
+      }
+    </script>
+  </body>
+</html>

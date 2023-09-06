@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How to Sortlist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #Cont-A{
+        margin-bottom:40px;
+        text-align:center;
+        line-height:20px;
+      }
+      h3{margin:10px;}
+      #copy1Btn,#copy3Btn{
+        position:absolute;
+        left:285px;
+      }
+      #copy1Btn{
+        top:1182px;
+      }
+      #copy3Btn{
+        top:2360px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ContMain">
+        <div id="menuCont">
+          <div id="Menu">
+            <h1 style="font-size:xxx-large;color:black;" onclick="removeMenu()">&times;</h1>
+            <a href="How to.html" id="ownerLink"><i class="fa fa-home"></i>Home</a>
+            <input type="text" id="searchBar" onkeyup="Filter()" placeholder="How To..."/>
+            <a href="HTSkillBar.html">Skill Bar</a>
+            <a href="HTFlipCard.html">Flip Card</a>
+            <a href="HTJSAnimations.html">JS Animation</a>
+            <a href="HTCalender.html">Calender</a>
+            <a href="HTSortList.html" id="ownerLink">Sort List</a>
+            <a href="HTSortTable.html">Sort Table</a>
+            <a href="HTDropdown.html">Dropdown</a>
+            <a href="HTFilterTable.html">Filter Table</a>
+            <a href="HTFilterList.html">Filter List</a>
+            <a href="HTButton.html">Buttons</a>
+            <a href="HTModalBox.html">Modal Box</a>
+            <a href="HTStarRating.html">Star Rating</a>
+            <a href="HTComingSoonPage.html">Coming Soon page</a>
+            <a href="HTAccordion.html">Accordion</a>
+            <a href="HTCards.html">Cards</a>
+            <a href="HTTooltips.html">Tooltips</a>
+            <a href="HTPopups.html">Popups</a>
+            <a href="HTCircles.html">Circles</a>
+            <a href="HTGlowingText.html">Glowing Text</a>
+            <a href="HTProfileCard.html">Profile Card</a>
+            <a href="HTProductCard.html">Product Card</a>
+            <a href="HTPlaceholderColor.html">Placeholder Color</a>
+            <a href="HTToDoList.html">To Do List</a>
+            <a href="HTStickyHeader.html">Sticky Header</a>
+            <a href="HTHideScrollbar.html">Hide Scrollbar</a>
+            <a href="HTDownloadLink.html">Download Link</a>
+            <a href="HTCallout.html">Callout</a>
+            <a href="HTGetCurrentScreenSize.html">Get current screen size </a>
+            <a href="HTGetCurrentURL.html">Get current URL</a>
+            <a href="HTGetIframeElement.html">Get Iframe Element</a>
+            <a href="HTCalculator.html">Calculator</a>
+          </div>
+        </div>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        <div id="circle" onclick="displayMenu()">menu</div>
+        <div>
+          <a href="HTSkillBar.html" id="btnA"><button id="prevbtn">Prev</button></a>
+          <a href="HTSortTable.html" id="btnA"><button id="nextbtn">Next</button></a>
+        </div>
+        
+        <div id="explainCont">
+        <h1>How To Create Sort List</h1>
+        <hr><br><br><hr>
+        How to sort a HTML List Alphabetically<br>
+        Click the Sort Button to Sort the List Below.
+        </div>
+        
+        <h3>OUTPUT:</h3>
+        <div id="Cont-A">
+          <button id="sortBtn">Sort List</button>
+          <ul id="list">
+            <li>HTML</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>C#</li>
+            <li>TypeScript</li>
+            <li>DJango</li>
+            <li>Nude JS</li>
+          </ul>
+        </div>
+        
+        <h3>HTML code</h3>
+        <div id="Cont-Z1">
+          &lt;button id="sortBtn"> Sort List &lt;/button><br>
+          &lt;ul id="list"><br>
+            &nbsp; &nbsp; &lt;li>HTML&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>Python&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>PHP&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>JavaScript&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>CSS&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>C#&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>TypeScript&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>DJango&lt;/li><br>
+            &nbsp; &nbsp; &lt;li>Nude JS&lt;/li><br>
+          &lt;/ul>
+        </div>
+        <button onclick="copy1()" id="copy1Btn">Copy</button>
+        
+        <h3>JavaScript code</h3>
+        <div id="Cont-Z3">
+      document.getElementById<wbr>("sortBtn").<wbr>addEventListener<wbr>('click',sort);<br>
+      function sort(){<br>
+        &nbsp; &nbsp; let ul=document.getElementById<wbr>("list");<br>
+        &nbsp; &nbsp; let switching=true;<br>
+        &nbsp; &nbsp; let shouldSwitch;<br>
+        &nbsp; &nbsp; while(switching){<br>
+        &nbsp; &nbsp; &nbsp; switching=false;<br>
+        &nbsp; &nbsp; &nbsp; let li=ul.getElementsByTagName<wbr>("li");<br>
+        &nbsp; &nbsp; &nbsp; let i;<br>
+        &nbsp; &nbsp; &nbsp; for(i=0; i&lt;(li.length-1);i++){<br>
+        &nbsp; &nbsp; &nbsp; &nbsp;shouldSwitch=false;<br>
+        &nbsp; &nbsp; &nbsp; &nbsp;if(li[i].innerHTML.<wbr>toLowerCase() > li[i + 1].innerHTML.<wbr>toLowerCase()){<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; shouldSwitch =true;<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;<br>
+        &nbsp; &nbsp; &nbsp; &nbsp;}<br>
+        &nbsp; &nbsp; &nbsp; }<br>
+        &nbsp; &nbsp; &nbsp; if(shouldSwitch){<br>
+        &nbsp; &nbsp; &nbsp; &nbsp;li[i].parentNode<wbr>.insertBefore<wbr>(li[i+1],li[i]);<br>
+        &nbsp; &nbsp; &nbsp; &nbsp; switching=true;<br>
+        &nbsp; &nbsp; &nbsp; }<br>
+        &nbsp; &nbsp; }<br>
+      }
+        </div>
+        <button onclick="copy3()" id="copy3Btn">Copy</button>
+        
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis <i class="fa fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="HowTo.js">
+    </script>
+    <script>
+      function copy1(){
+        let x =document.getElementById("Cont-Z1");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy1Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      function copy3(){
+        let x =document.getElementById("Cont-Z3");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy3Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      
+      document.getElementById("sortBtn").addEventListener('click',sort);
+      function sort(){
+        let ul=document.getElementById("list");
+        let switching=true;
+        let shouldSwitch;
+        while(switching){
+          switching=false;
+          let li=ul.getElementsByTagName("li");
+          let i;
+          for(i=0; i<(li.length-1);i++){
+            shouldSwitch=false;
+            if(li[i].innerHTML.toLowerCase() > li[i + 1].innerHTML.toLowerCase()){
+              shouldSwitch =true;
+              break;
+            }
+          }
+          if(shouldSwitch){
+            li[i].parentNode.insertBefore(li[i+1],li[i]);
+            switching=true;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

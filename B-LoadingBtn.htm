@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="HowTo.css">
+    <style>
+      #container{background:#ddf;}
+      #head{padding:10px;}
+      h3{margin:10px;}
+      .fa-bars{float:left;}
+      #BtnDropsCont{
+        position:fixed;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.7);
+        display:none;
+        width:100%;
+        height:700px;
+        z-index:1;
+      }
+      #BtnDrops{
+        position:absolute;
+        width:60%;
+        background:#ddf;
+        left:;
+        padding:10px;
+        line-height:40px;
+      }
+      h1{text-align:center;}
+      #Cont-A{margin-bottom:40px;}
+      #Cont-Z1{height:30em;}
+      #copy1Btn{
+        position:absolute;
+        left:280px;
+        top:970px;
+      }
+      
+      #loadBtn{
+        padding:10px;
+        background:#44f;
+        color:white;
+        font-size:large;
+        border:none;
+        margin:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="head">
+        <h1>H<span id="H">OW</span> TO</h1>
+      </div>
+        
+        <div id="explainCont">
+        <h1> <i onclick="dropMenu()" class="fa fa-bars"></i>Loading Buttons</h1><hr>
+        <div id="BtnDropsCont">
+        <div id="BtnDrops">
+          <a href="HTButton.html">Back to Buttons</a>
+          <h2>Buttons</h2>
+          <a href="B-AlartBtn.htm">Alart Buttons</a>
+          <a href="B-OutlineBtn.htm">Outline Buttons</a>
+          <a  id="ownerLink" href="B-LoadingBtn.htm">Loading Buttons</a>
+          <a href="B-SplitBtn.htm">Split Buttons</a>
+          <a href="B-FadeBtn.htm">Fade Buttons</a>
+          <a href="B-Social-MBtn.htm">Social Media Buttons</a>
+          <a href="B-DownloadBtn.htm">Download Buttons</a>
+          <a href="B-IconBtn.htm">Icon Buttons</a>
+          <a href="B-PillBtn.htm">Pill Buttons</a>
+          <a href="B-NotificationBtn.htm">Notification Buttons</a>
+          <a href="B-NPBtn.htm">Next-Prev Buttons</a>
+          <a href="B-BlockBtn.htm">Block Buttons</a>
+          <a href="B-Scroll-toTopBtn.htm">Scroll To Top Buttons</a>
+          <a href="B-RoundBtn.htm">Round Buttons</a>
+        </div>
+        </div>
+        </div>
+        
+        <h3>OUTPUT:</h3>
+        <div id="Cont-A">
+          <button id="loadBtn"><i class="fa fa-circle-o-notch fa-spin"></i> Loading</button>
+          <button id="loadBtn"><i class="fa fa-refresh fa-spin"></i> Loading</button><br>
+          <button id="loadBtn"><i class="fa fa-spinner fa-spin"></i> Loading</button>
+        </div>
+        
+        <h3>Code:</h3>
+        <div id="Cont-Z1">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &nbsp; &nbsp; &lt;head&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;meta charset="utf-8"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;meta name="viewport" content="device-width, initial-scale=1"&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;link rel="stylesheet" href="https://cdnjs.<wbr>cloudflare.com<wbr>/ajax/libs/font-awesome/4.7.0/<wbr>css/font-awesome.<wbr>min.css"/&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;style&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #loadBtn{<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding:10px;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background:#44f;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:white;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size:large;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border:none;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/style&gt;<br>
+          &nbsp; &nbsp; &lt;/head&gt;<br>
+          &nbsp; &nbsp; &lt;body&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="loadBtn"&gt;&lt;i class="fa fa-circle-o-notch fa-spin"&gt;&lt;/i&gt; Loading &lt;/button&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="loadBtn"&gt;&lt;i class="fa fa-refresh fa-spin"&gt;&lt;/i&gt; Loading &lt;/button&gt;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;button id="loadBtn"&gt;&lt;i class="fa fa-spinner fa-spin"&gt;&lt;/i&gt; Loading &lt;/button&gt;<br>
+          &nbsp; &nbsp; &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div>
+        <button onclick="copy1()" id="copy1Btn">Copy</button>
+        
+      <div id="bottomBar">
+        <i class="fa fa-arrow-left" onclick="backHistory()"></i>
+        <i class="fa fa-arrow-right" onclick="forwardHistory()"></i>
+        <a href="portfolio.html"> <button id="Portfolio" disabled>My Portfolio</button></a>
+      </div>
+    </div>
+    <footer>
+      <h2>Contact me</h2>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-telegram"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+      <br>
+      <hr>
+      <p style="text-align:center;">DeonDennis <i class="fa fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="HowTo.js">
+    </script>
+    <script>
+      function copy1(){
+        let x =document.getElementById("Cont-Z1");
+        let d =document.createElement("textarea");
+        document.body.appendChild(d)
+        d.value=x.textContent;
+        d.select();
+        document.execCommand("copy");
+        document.body.removeChild(d);
+        
+        let f =document.getElementById("copy1Btn");
+        f.textContent="Copied";
+        f.style.color="red";
+        setTimeout(function(){
+          f.textContent="Copy";
+          f.style.color="white";
+        },3500);
+      }
+      function dropMenu(){
+        let gg =document.getElementById("BtnDropsCont");
+        gg.style.display="block";
+      }
+      window.onclick=function(event){
+        if(event.target==document.getElementById("BtnDropsCont") ){
+          document.getElementById("BtnDropsCont").style.display="none";
+        }
+      }
+    </script>
+  </body>
+</html>
